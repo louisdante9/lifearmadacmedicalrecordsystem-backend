@@ -29,3 +29,4 @@ console.log('3. Run: npm install');
 console.log('4. Run: npm run dev');
 console.log('\n📚 Check README.md for detailed documentation');
 
+

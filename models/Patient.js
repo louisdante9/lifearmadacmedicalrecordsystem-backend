@@ -241,8 +241,6 @@ const patientSchema = new mongoose.Schema({
 });
 
 // Indexes for better performance
-patientSchema.index({ patientId: 1 });
-patientSchema.index({ qrCode: 1 });
 patientSchema.index({ 'biodata.firstName': 1, 'biodata.lastName': 1 });
 patientSchema.index({ 'biodata.contact.phone': 1 });
 patientSchema.index({ primaryHospital: 1 });

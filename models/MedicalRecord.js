@@ -269,7 +269,7 @@ const medicalRecordSchema = new mongoose.Schema({
 });
 
 // Indexes for better performance
-medicalRecordSchema.index({ patient: 1, visitInfo.visitDate: -1 });
+medicalRecordSchema.index({ patient: 1, 'visitInfo.visitDate': -1 });
 medicalRecordSchema.index({ hospital: 1 });
 medicalRecordSchema.index({ createdBy: 1 });
 medicalRecordSchema.index({ 'visitInfo.visitDate': -1 });
